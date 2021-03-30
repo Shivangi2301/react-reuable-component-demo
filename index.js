@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
-import Hello from './Hello';
-import './style.css';
-import Category from './Category';
-import Attribute from './Attribute';
-import GenericComponent from './GenericComponent';
+import React, { Component } from "react";
+import { render } from "react-dom";
+import "./style.css";
+import Category from "./Category";
+import Attribute from "./Attribute";
 
 class App extends Component {
   constructor() {
@@ -17,10 +15,9 @@ class App extends Component {
         <Category />
         <hr />
         <Attribute />
-        <hr />       
       </div>
     );
   }
 }
 
-render(<App />, document.getElementById('root'));
+render(<App />, document.getElementById("root"));
