@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import GenericComponent from "./GenericComponent";
+import React, { useState, useEffect } from 'react';
+import GenericComponent from './GenericComponent';
 
 export default function Category() {
   const [catState, setCatState] = useState({});
@@ -10,18 +10,16 @@ export default function Category() {
   }, []);
 
   const catButtonClicked = () => {
-    console.log("Category Button Clicked");
+    console.log('Category Button Clicked');
     setShouldShowText(true);
   };
 
-  const catInputChange = event => {
-    console.log("Category on change");
+  const catInputChange = (event) => {
+    console.log('Category on change');
     const { name, value } = event.target;
     setCatState({ ...catState, name: value });
     setShouldShowText(false);
   };
-
-  console.log("CAT STATE: ", catState);
 
   return (
     <div>
